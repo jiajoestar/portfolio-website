@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style1.css"/>
+        <link rel="icon" type="image/x-icon" href="image/sans.png"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+    </head>
+
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <nav>
+                    <!-- navigation bar that appears on every page -->
+                    <img src="image/logo3.png" class="logo"/>
+                    <ul id="sideMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio-page.html" class="active">Portfolio</a></li>
+                        <li><a href="contact-me.html">Contact Me</a></li>
+                        <!-- function to open and close the menu when clicking on the icon-->
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Portfolio</h1>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <!-- list of projects -->
+                <div class="projects">
+                    <!-- each project division contains an image, link to project on github and brief description -->
+                    <div class="project">
+                        <img src="https://github.com/jiajoestar/subway-surfers/blob/main/subwaysurfers%20cover.png?raw=true&fit=crop&w=1225&q=80" alt="Subway Surfers"/>
+                        <div class="layer">
+                            <h4><a href="https://github.com/jiajoestar/subway-surfers/tree/main#subway-surfers" target="_blank">Subway Surfers</a></h4>
+                            <p>Endless runner game created in Python.</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="https://github.com/jiajoestar/frogger/blob/main/frogger%20screenshot.png?raw=true&auto=format&fit=crop&w=1266&q=80" alt="Frogger"/>
+                        <div class="layer">
+                            <h4><a href="https://github.com/jiajoestar/frogger" target="_blank">Frogger</a></h4>
+                            <p>Frogger game created in Python.</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="https://github.com/jiajoestar/car-and-track/blob/main/portfolio%20task%206%20screenshot.png?raw=true&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80" alt="Car and Track"/>
+                        <div class="layer">
+                            <h4><a href="https://github.com/jiajoestar/car-and-track" target="_blank">Car and Track</a></h4>
+                            <p>Car and Track visual where cars compete against each other. Created in Processing.</p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Jia Li Lin, 2024.</p>
+        </footer>
+
+        <!-- javascript for side menu on small screens -->
+        <script>
+            var sidemenu = document.getElementById("sideMenu");
+            
+            // the menu opens from the right
+            function openMenu() {
+                sidemenu.style.right = "0";
+            }
+            
+            // the menu closes to the right
+            function closeMenu() {
+                sidemenu.style.right = "-200px";
+            }
+        
+        </script>
+
+    </body>
+
+
+</html>

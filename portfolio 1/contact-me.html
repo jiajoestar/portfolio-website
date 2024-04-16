@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        <link rel="stylesheet" type="text/css" href="style1.css"/>
+        <link rel="icon" type="image/x-icon" href="image/sans.png"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+        <script defer src="js/myscript.js"></script>
+    </head>
+
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <nav>
+                    <!-- navigation bar that appears on every page -->
+                    <img src="image/logo3.png" class="logo"/>
+                    <ul id="sideMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio-page.html">Portfolio</a></li>
+                        <li><a href="contact-me.html" class="active">Contact Me</a></li>
+                        <!-- function to open and close the menu when clicking on the icon -->
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Contact Me</h1>
+                    <h6>Enquire about future projects</h6>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="contacts">
+                <h2>Contact Form</h2>
+                <br><br>
+                <form id="contact-me">
+                    <input type="text" name="name" placeholder="First name" required/>
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="email" name="confirmEmail" placeholder="Confirm email" required/>
+                    <br><br>
+                    <label for="project-date">Date of Project:</label>
+                    <input type="date" id="project-date" name="project-date" required/>
+                    <br><br>
+                    <label for="durations">Choose your duration:</label>
+                    <input list="durations" name="duration" id="duration" required/>
+                        <datalist id="durations">
+                        <option value="3 months">
+                        <option value="6 months">
+                        <option value="9 months">
+                        <option value="12 months">
+                        <option value="12 months +">
+                        </datalist>
+                    </select><br><br>
+                    <label>Description<br>
+                        <textarea name="txtAr" rows="4" cols="40">Start typing here...  </textarea>
+                    </label>
+                    <br><br>
+                    <label>How would you like to be contacted?</label><br>
+                    <label><input type="checkbox" name="cbx" value="sms"/>SMS</label><br>
+			        <label><input type="checkbox" name="cbx" value= "emails"/>Email</label><br>
+                    <label><input type="checkbox" name="cbx" value= "all"/>SMS & Email</label><br>
+                    <label for="number">Phone Number:</label><br>
+                    <input type="tel" name="telNum" value="e.g. 11111222223"/><br>
+                    <br>
+                    <a href="mailto:230123180@aston.ac.uk"><button type="submit">Submit</button></a>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Jia Li Lin, 2024.</p>
+        </footer>
+
+        <!-- javascript for side menu on small screens -->
+        <script>
+            var sidemenu = document.getElementById("sideMenu");
+            
+            // the menu opens from the right
+            function openMenu() {
+                sidemenu.style.right = "0";
+            }
+            
+            // the menu closes to the right
+            function closeMenu() {
+                sidemenu.style.right = "-200px";
+            }
+        
+        </script>
+
+    </body>
+
+</html>

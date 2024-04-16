@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jia Li Lin's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style1.css"/>
+        <link rel="icon" type="image/x-icon" href="image/sans.png"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header id="main-header">
+            <div class="container">
+                <nav>
+                    <!-- navigation bar that appears on every page -->
+                    <img src="image/logo3.png" class="logo"/>
+                    <ul id="sideMenu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="portfolio-page.html">Portfolio</a></li>
+                        <li><a href="contact-me.html">Contact Me</a></li>
+                        <!-- function to open and close the menu when clicking on the icon -->
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I'm Jia</h1>
+                    <p>SUN: 230123180</p>
+                    <!-- opens mail application to send an email to given email -->
+                    <p><a href="mailto: 230123180@aston.ac.uk">230123180@aston.ac.uk</a></p>
+
+                    <!-- links to socials-->
+                    <div class="socials">
+                        <a href="https://github.com/jiajoestar"><i class='fab fa-github'></i></a>
+                        <a href="https://www.linkedin.com/in/jia-li-lin/"><i class='fab fa-linkedin-in'></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- about me -->
+            <section id="about-me">
+                <div class="container">
+                    <div class="row">
+                        <!-- image on left-hand side-->
+                        <div class="about-col-1">
+                            <img src="image/me.jpg"/>
+                        </div>
+
+                        <!-- about me -->
+                        <div class="about-col-2">
+                            <h2 class="subtitle">About Me</h2>
+
+                            <!-- education -->
+                            <div id="education">
+                                <h4>Education</h4>
+                                <ul>
+                                    <li><em>Hall Green School (2016-2021)</em></li>
+                                    <li><em>University of Birmingham School Sixth Form (2021-2023)</em></li>
+                                    <li><em>Aston University (2023-present)</em></li>
+                                    <br>
+                                    <blockquote>"Jia is a pleasure to teach and have in the classroom." - Ms E. Offong, UOBS Sixth Form</blockquote>
+                                </ul>
+                            </div>
+
+                            <!-- work experience -->
+                            <div id="work-experience">
+                                <h4>Work Experience</h4>
+                                <p>Software Development Virtual Work Experience | APR 2021</p>
+                                <p>self-studied and engaged in given tasks dedicated to software development. </p>
+                            </div>
+
+                            <!-- skills -->
+                            <div id="skills">
+                                <h4>Languages</h4>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" width="15" height="15" alt="python logo"/>
+                                <label>Python</label>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <br>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Processing_2021_logo.svg/2048px-Processing_2021_logo.svg.png" width="15" height="15" alt="processing logo"/>
+                                <label>Processing</label>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <br>
+                                <img src="https://brandslogos.com/wp-content/uploads/images/large/java-logo-1.png" width="15" height="15" alt="java logo"/>
+                                <label>Java</label>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+                            <br>
+
+                            <!-- interests -->
+                            <div id="interests">
+                                <h4>Interests</h4>
+                                <ul>
+                                    <li>Crochet</li>
+                                    <li>Drawing & Sketching</li>
+                                    <li>Ukulele</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Jia Li Lin, 2024.</p>
+        </footer>
+
+        <!-- javascript for side menu on small screens -->
+        <script>
+            var sidemenu = document.getElementById("sideMenu");
+            
+            // the menu opens from the right
+            function openMenu() {
+                sidemenu.style.right = "0";
+            }
+            
+            // the menu closes to the right
+            function closeMenu() {
+                sidemenu.style.right = "-200px";
+            }
+        
+        </script>
+
+    </body>
+
+
+
+</html>

@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+#main-header {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a.active {
+    color: blue;
+}
+
+.logo {
+    width: 140px;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    color: white;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.socials {
+    margin:auto;
+    padding:10px;
+    display: flex;
+    position: relative;
+    align-items: space-around;
+    justify-content: left;
+}
+
+.socials i {
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+/* about-me*/
+
+#about-me {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: #ababab;
+}
+
+/* id tags */
+
+#education h4 {
+    color: darkblue;
+}
+
+#work-experience h4 {
+    color: cadetblue;
+}
+
+#skills h4 {
+    color: cornflowerblue;
+}
+
+#interests h4 {
+    color: darkcyan;
+}
+
+.checked {
+    color: orange;
+}
+
+/* contact-me */
+
+#contacts {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.project a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* css for small screens */
+
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: grey;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    #contacts {
+        flex-basis: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+}
